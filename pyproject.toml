@@ -10,5 +10,4 @@ bundle_id = "com.sportlife.app"
 company = "Sport Life"
 
 [tool.flet.app]
-path = "frontend"
-module_name = "main"
+path = "."

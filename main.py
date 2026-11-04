@@ -1,8 +1,7 @@
 import sys
 import os
 
-# Добавляем папку frontend в путь поиска модулей
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'frontend'))
 
 import flet as ft
 from views import (
@@ -31,9 +30,7 @@ class App:
             "favorites": lambda: favorites_view.build(self),
         }
         
-        # ИСПРАВЛЕНО: было viewsname, стало views[name]()
         self.page.controls.append(views[name]())
-        
         self.page.update()
 
     def ok(self, m):
