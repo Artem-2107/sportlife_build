@@ -10,4 +10,10 @@ bundle_id = "com.sportlife.app"
 company = "Sport Life"
 
 [tool.flet.app]
-path = "."
+path = "frontend"
+module_name = "main"
+
+[tool.flet.android]
+compile_sdk_version = 34
+target_sdk_version = 34
+min_sdk_version = 21
