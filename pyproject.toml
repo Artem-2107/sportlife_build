@@ -10,4 +10,4 @@ bundle_id = "com.sportlife.app"
 company = "Sport Life"
 
 [tool.flet.app]
-path = "sport_life"  # <-- ИЗМЕНЕНО С "frontend" НА "sport_life"
+path = "frontend"

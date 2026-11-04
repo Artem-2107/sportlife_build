@@ -37,18 +37,16 @@ jobs:
       run: yes | flutter doctor --android-licenses || true
       
     - name: Install dependencies
-      working-directory: ./sport_life
+      working-directory: ./frontend
       run: |
         pip install -r requirements.txt
         pip install flet
         
     - name: Build APK
-      # Запускаем в корневой директории, чтобы flet нашел pyproject.toml
       run: flet build apk
       
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: SportLife-Flet-APK
-        # Путь изменён на sport_life/build/apk/*.apk
-        path: sport_life/build/apk/*.apk
+        path: frontend/build/apk/*.apk

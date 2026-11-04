@@ -1,8 +1,7 @@
 import sys
 import os
 
-# Добавляем текущую папку в путь поиска модулей,
-# чтобы Python мог найти views, api и другие папки рядом с main.py
+# Добавляем папку frontend в путь поиска модулей
 sys.path.append(os.path.dirname(__file__))
 
 import flet as ft
