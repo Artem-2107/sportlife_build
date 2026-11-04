@@ -1,6 +1,7 @@
 import sys
 import os
 
+# Добавляем папку frontend в пути поиска, чтобы работали импорты из неё
 sys.path.append(os.path.join(os.path.dirname(__file__), 'frontend'))
 
 import flet as ft

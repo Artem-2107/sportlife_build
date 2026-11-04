@@ -37,10 +37,9 @@ jobs:
       run: yes | flutter doctor --android-licenses || true
       
     - name: Install dependencies
-      working-directory: ./frontend
       run: |
-        pip install -r requirements.txt
-        pip install flet
+        pip install -r ./frontend/requirements.txt
+        pip install flet==0.25.2
         
     - name: Build APK
       run: flet build apk
